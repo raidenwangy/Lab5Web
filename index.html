@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratikum JavaScript</title>
+</head>
+<body>
+    <h1>Pengenalan Javacript</h1>
+    <p id="pesan">Konten awal</p>
+    <script src="script.js"></script>
+
+<!-- Latihan 6 — Form bilangan genap atau ganjil -->
+    <label for="bilangan">Masukkan bilangan bulat:</label>
+    <input type="number" id="bilangan" step="1">
+    <button type="button" onclick="cekBilangan()">Periksa</button>
+    <p id="hasilBilangan"></p>
+<!-- Latihan 7 — Mengubah warna halaman -->
+    <button type="button" onclick="ubahWarnaLatar('lightgreen')">Latar Hijau</button>
+    <button type="button" onclick="ubahWarnaLatar('white')">Latar Putih</button>
+    <button type="button" onclick="ubahWarnaLatar('lightyellow')">Latar Kuning</button>
+
+<!-- Latihan 8 — DOM dan checkbox menu makanan -->
+    <h3>Daftar Menu Makanan</h3>
+    <label><input type="checkbox" class="menu" value="5000"> Ayam Goreng — Rp5.000</label><br>
+    <label><input type="checkbox" class="menu" value="500"> Tempe — Rp500</label><br>
+    <label><input type="checkbox" class="menu" value="2500"> Telur Dadar — Rp2.500</label><br>
+    <p>Total: Rp<span id="total">3000</span></p>
+
+
+
+<!-- Mini projeck -->
+
+    <h3>Mini Project - Kalkulator Nilai Mahasiswa</h3>
+
+    <label for="tugas">Nilai Tugas:</label>
+    <input type="number" id="tugas" min="0" max="100">
+    <br><br>
+
+    <label for="uts">Nilai UTS:</label>
+    <input type="number" id="uts" min="0" max="100">
+    <br><br>
+
+    <label for="uas">Nilai UAS:</label>
+    <input type="number" id="uas" min="0" max="100">
+    <br><br>
+
+<button type="button" onclick="prosesNilai()">
+    Hitung Nilai
+</button>
+
+<p id="hasilNilai"></p>
+
+
+
+<hr>
+<h2>Eksperimen Mandiri</h2>
+
+<!-- Nomor 1: Operasi dua nilai -->
+<h3>1. Operasi Aritmetika Dua Nilai</h3>
+<button type="button" onclick="inputOperasiDasar()">Masukkan Dua Nilai</button>
+<p id="hasilOperasi"></p>
+
+<!-- Nomor 7: Tabel perkalian 7 -->
+<h3>7. Tabel Perkalian 7</h3>
+<button type="button" onclick="tampilkanPerkalian7()">Tampilkan Tabel Perkalian</button>
+<p id="hasilPerkalian7"></p>
+
+<!-- Nomor 8: Cek bilangan genap -->
+<h3>8. Cek Bilangan Genap</h3>
+<input type="number" id="cekGenapInput" step="1">
+<button type="button" onclick="tampilkanCekGenap()">Cek Genap</button>
+<p id="hasilCekGenap"></p>
+
+<!-- Nomor 9: Validasi nama dan nilai -->
+<h3>9. Validasi Nama dan Nilai</h3>
+<label for="namaValidasi">Nama:</label>
+<input type="text" id="namaValidasi">
+
+<label for="nilaiValidasi">Nilai (0–100):</label>
+<input type="number" id="nilaiValidasi" min="0" max="100">
+
+<button type="button" onclick="validasiFormMandiri()">Validasi Form</button>
+<p id="hasilValidasiForm"></p>
+
+<!-- Nomor 10: Tambahan menu -->
+<h3>10. Menu Tambahan</h3>
+<label><input type="checkbox" class="menu" value="3000"> Es Teh — Rp3.000</label><br>
+<label><input type="checkbox" class="menu" value="7000"> Mie Goreng — Rp7.000</label><br>
+
+<!-- Nomor 11: Sembunyikan/tampilkan teks -->
+<h3>11. Sembunyikan atau Tampilkan Elemen</h3>
+<p id="teksToggle">Ini adalah teks yang dapat disembunyikan.</p>
+<button type="button" onclick="toggleTeks()">Sembunyikan / Tampilkan Teks</button>
+
+</body>
+</html>
